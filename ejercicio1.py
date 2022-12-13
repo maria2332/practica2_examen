@@ -19,8 +19,8 @@ def checkio(text):
     for i in range(len(text)):
         if text[i] == "#":
             palabra = text[i+1:]
-            if palabra.isalpha():
+            if palabra[0].isalpha():
                 lista.append(palabra)
     return lista
 
-print(checkio("Hello #hola3r4"))
+print(checkio("Hello #6hola3r4"))
