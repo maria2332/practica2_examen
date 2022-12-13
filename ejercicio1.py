@@ -9,11 +9,6 @@ Entrada: cadena de palabras, donde algunas palabras pueden contener un hashtag.
 Salida: matriz de cadenas que tenían el prefijo del hashtag, pero que no contienen el hashtag.
 """
 
-#bucle que detecte si hay hashtags
-#si hay hashtags, que los guarde en una lista
-#que elimine los hashtags de la lista
-#que devuelva la lista
-
 def checkio(text):
     lista = []
     for i in range(len(text)):
