@@ -24,6 +24,8 @@
 # datos memorizada, evita las deficiencias de la recursividad del árbol. ¿Puedes hacer que la
 # memoria caché sea privada para esta función?
 
+from ast import main
+
 def fibonacci(n):
     sucesion = {}
     if n in sucesion:
@@ -35,3 +37,6 @@ def fibonacci(n):
     return sucesion[n]
 
 print(fibonacci(6))
+
+if __name__ == "__main__":
+    main()

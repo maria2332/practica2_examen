@@ -16,6 +16,7 @@
 #sumar los digitos de la mitad izquierda y la mitad derecha
 #si la longitud es impar, debes ignorar el numero del medio al sumar las mitades
 
+from ast import main
 
 def luck_check(str):
     if len(str) == 0:
@@ -38,3 +39,6 @@ def luck_check(str):
         return False
 
 print(luck_check("003111"))
+
+if __name__ == "__main__":
+    main()

@@ -9,6 +9,8 @@ Entrada: cadena de palabras, donde algunas palabras pueden contener un hashtag.
 Salida: matriz de cadenas que tenían el prefijo del hashtag, pero que no contienen el hashtag.
 """
 
+from ast import main 
+
 def checkio(text):
     lista = []
     for i in range(len(text)):
@@ -19,3 +21,6 @@ def checkio(text):
     return lista
 
 print(checkio("Hello #6hola3r4"))
+
+if __name__ == "__main__":
+    main()

@@ -16,6 +16,8 @@
 #  [2, 5, 8],
 #  [1, 4, 7]]
 
+from ast import main
+
 def rotate(matrix, direction):
     if direction == "clockwise":
         matrix = list(zip(*matrix[::-1]))
@@ -28,3 +30,6 @@ matrix = [[1, 2, 3],
     [7, 8, 9]]
 
 print(rotate(matrix, "clockwise"))
+
+if __name__ == "__main__":
+    main()
