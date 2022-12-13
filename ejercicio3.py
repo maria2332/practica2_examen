@@ -25,7 +25,7 @@
 # memoria caché sea privada para esta función?
 
 def fibonacci(n):
-    cache = []
+    cache = {}
     if n in cache:
         return cache[n]
     if n == 0 or n == 1:
