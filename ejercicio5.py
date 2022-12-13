@@ -16,3 +16,15 @@
 #  [2, 5, 8],
 #  [1, 4, 7]]
 
+def rotate(matrix, direction):
+    if direction == "clockwise":
+        matrix = list(zip(*matrix[::-1]))
+    elif direction == "counter-clockwise":
+        matrix = list(zip(*matrix))[::-1]
+    return matrix
+
+matrix = [[1, 2, 3],
+    [4, 5, 6],
+    [7, 8, 9]]
+
+print(rotate(matrix, "clockwise"))
