@@ -8,3 +8,13 @@ Problemas:
 Meta:
 • Tienes que devolver 'Puedo escribir números como 1, 2, 3'.
 """
+
+from ast import main
+
+def number():
+    return "Puedo escribir números como 1, 2, 3"
+
+print(number())
+
+if __name__ == "__main__":
+    main()
